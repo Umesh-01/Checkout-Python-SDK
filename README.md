@@ -4,7 +4,7 @@
 
 ### To consolidate support across various channels, we have currently turned off the feature of GitHub issues. Please visit https://www.paypal.com/support to submit your request or ask questions within our community forum.
 
-__Welcome to PayPal Python SDK__. This repository contains PayPal's Python SDK and samples for [v2/checkout/orders](https://developer.paypal.com/docs/api/orders/v2/) and [v2/payments](https://developer.paypal.com/docs/api/payments/v2/) APIs.
+__Welcome to PayPal Python SDK__. This repository contains PayPal's Python SDK for Checkout and samples for [v2/checkout/orders](https://developer.paypal.com/docs/api/orders/v2/) and [v2/payments](https://developer.paypal.com/docs/api/payments/v2/) APIs.
 
 This is a part of the next major PayPal SDK. It includes a simplified interface to only provide simple model objects and blueprints for HTTP calls. This repo currently contains functionality for PayPal Checkout APIs which includes [Orders V2](https://developer.paypal.com/docs/api/orders/v2/) and [Payments V2](https://developer.paypal.com/docs/api/payments/v2/).
 
@@ -47,6 +47,8 @@ client = PayPalHttpClient(environment)
 ## Examples
 
 ### Creating an Order
+
+This will create an order and print order id for the created order
 
 #### Code:
 ```python
@@ -118,7 +120,7 @@ Total Amount: USD 100.00
 ```
 
 ### Capturing an Order
-After approving order above using `approve` link
+This will capture an order after approving order above using `approve` link
 
 #### Code:
 ```python
